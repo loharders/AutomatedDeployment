@@ -15,7 +15,7 @@ on:
 jobs:
 
   # This workflow contains a single job called "build"
-  clean:
+  build:
   
     # The type of runner that the job will run on
     runs-on: [self-hosted, windows, x64]
@@ -27,10 +27,17 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo "Test-message"
+      - name: Debug message
+        run: echo "Start build process ..."
       
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: DIR
-        
+      - name: Clean the build
+        run: echo "Clear ..."
+      
+      # Runs a single command using the runners shell
+      - name: Make the build
+        run: echo "Make all ..."
+              
+      # Runs a single command using the runners shell
+      - name: Program the build on the crazy car
+        run: echo "Program ..."
