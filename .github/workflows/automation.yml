@@ -29,6 +29,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: Debug message
         run: echo "Start build process ..."
+
+      # Runs a single command using the runners shell
+      - name: Debug message
+        run: DIR
       
       # Runs a single command using the runners shell
       - name: Clean the build
